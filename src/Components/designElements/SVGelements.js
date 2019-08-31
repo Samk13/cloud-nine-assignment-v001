@@ -98,7 +98,7 @@ export const TimeIcon = ({
   viewBox = "0 0 40 26"
 }) => (
 <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0" maskType="alpha" maskUnits="userSpaceOnUse" x="0" y="1" width="14" height="14">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="1" width="14" height="14">
 <path fillRule="evenodd" clipRule="evenodd" d="M0.267822 7.76784C0.267822 11.3132 3.15104 14.1964 6.69639 14.1964C10.2418 14.1964 13.125 11.3132 13.125 7.76784C13.125 4.22141 10.2418 1.33926 6.69639 1.33926C3.15104 1.33926 0.267822 4.22141 0.267822 7.76784Z" fill="white"/>
 </mask>
 <g mask="url(#mask0)">
@@ -128,7 +128,7 @@ export const WebIcon = ({
   viewBox = "0 0 40 26"
 }) => (
 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0" maskType="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
 <path fillRule="evenodd" clipRule="evenodd" d="M7.49996 15H0V0H7.49996H14.9999V15H7.49996Z" fill="white"/>
 </mask>
 <g mask="url(#mask0)">

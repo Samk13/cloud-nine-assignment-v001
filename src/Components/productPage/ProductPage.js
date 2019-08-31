@@ -59,7 +59,8 @@ const ProductPage = props => {
             <p style={{ marginLeft: 20 }}>www.salongweb.se</p>
           </ItemsS>
           <ItemsS>
-            Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet.
+            <InfoText>Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet.
+              </InfoText>
           </ItemsS>
 
         </Wraper>
@@ -70,6 +71,15 @@ const ProductPage = props => {
 
 export { ProductPage };
 
+const InfoText = styled.p`
+/* Lorem ipsum dolor si */
+
+
+max-width: 345px;
+font-size: 15px;
+line-height: 22px;
+color: #2B2B2B;
+`
 const ItemsS = styled.div`
   display: flex;
   width: 375px;
