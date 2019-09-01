@@ -7,18 +7,20 @@ import {Link} from 'react-router-dom';
 const ProductListItem = props => {
   return (
     <Wrapper>
-      <h5>{props.first}</h5>
-      <div className='cntr'>
-        <h4>{props.title}</h4>
+
+      <h5>{props.data.first}</h5>
+
+      <div >
+        <h4>{props.data.title}</h4>
         <Stars />
-        <h6>{props.location}</h6>
+        <h6>{props.data.location}</h6>
       </div>
       <div>
 
       </div>
       <div>
-      <h6>{props.price}</h6>
-      <h6>{props.time}</h6>
+      <h6>{props.data.price}</h6>
+      <h6>{props.data.time}</h6>
       </div>
       <Link to='/product'>
       <GoBtn onClick={props.openItem}>

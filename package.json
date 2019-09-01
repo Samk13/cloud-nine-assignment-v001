@@ -5,6 +5,9 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@bumaga/tabs": "0.1.3",
+    "@yazanaabed/react-tabs": "2.3.6",
+    "rc-slider": "8.6.13",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-router-dom": "5.0.1",

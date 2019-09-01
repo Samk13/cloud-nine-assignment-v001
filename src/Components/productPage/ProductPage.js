@@ -5,12 +5,14 @@ import {
   Stars,
   Heart,
   BtnBack,
-  LocationIcon,
-  TimeIcon,
-  TeleIcon,
-  WebIcon
+  // LocationIcon,
+  // TimeIcon,
+  // TeleIcon,
+  // WebIcon
 } from '../designElements/SVGelements';
 import { Link } from 'react-router-dom';
+
+import {App} from '../productPage/TabsComponent/Tabs'
 const ProductPage = props => {
   return (
     <Wrapper>
@@ -35,11 +37,12 @@ const ProductPage = props => {
         <RatingCounter>(32)</RatingCounter>
       </Image>
         {/* Navigatiion that I didn't make here  */}
-      <TabNav>
+       <App />
+      {/* <TabNav>
         <p>Info</p>
         <p>Schema</p>
-      </TabNav>
-
+      </TabNav> */}
+{/* 
       <TextInfo>
         <Wraper>
           <ItemsS>
@@ -64,36 +67,36 @@ const ProductPage = props => {
           </ItemsS>
 
         </Wraper>
-      </TextInfo>
+      </TextInfo> */}
     </Wrapper>
   );
 };
 
 export { ProductPage };
 
-const InfoText = styled.p`
-/* Lorem ipsum dolor si */
+// const InfoText = styled.p`
+// /* Lorem ipsum dolor si */
 
 
-max-width: 345px;
-font-size: 15px;
-line-height: 22px;
-color: #2B2B2B;
-`
-const ItemsS = styled.div`
-  display: flex;
-  width: 375px;
-  height: 64px;
-`;
+// max-width: 345px;
+// font-size: 15px;
+// line-height: 22px;
+// color: #2B2B2B;
+// `
+// const ItemsS = styled.div`
+//   display: flex;
+//   width: 375px;
+//   height: 64px;
+// `;
 
-const Wraper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 90%;
-  position: absolute;
-  left: 25px;
-`;
+// const Wraper = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   width: 90%;
+//   position: absolute;
+//   left: 25px;
+// `;
 
 const Image = styled.div`
   position: absolute;
@@ -210,28 +213,28 @@ const TitleText = styled.h3`
   letter-spacing: -0.146667px;
   color: #ffffff;
 `;
-const TabNav = styled.div`
-  /* Rectangle 16 Copy */
-  position: absolute;
-  width: 375px;
-  height: 50px;
-  left: 0px;
-  top: 250px;
+// const TabNav = styled.div`
+//   /* Rectangle 16 Copy */
+//   position: absolute;
+//   width: 375px;
+//   height: 50px;
+//   left: 0px;
+//   top: 250px;
 
-  background: #ffffff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-`;
-const TextInfo = styled.div`
-  position: absolute;
-  width: 375px;
-  height: 348px;
-  left: 0px;
-  top: 321px;
-  background: #ffffff;
-`;
+//   background: #ffffff;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   text-align: center;
+// `;
+// const TextInfo = styled.div`
+//   position: absolute;
+//   width: 375px;
+//   height: 348px;
+//   left: 0px;
+//   top: 321px;
+//   background: #ffffff;
+// `;
 
 export const Wrapper = styled.div`
   height: 109px;
