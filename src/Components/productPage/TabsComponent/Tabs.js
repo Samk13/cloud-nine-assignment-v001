@@ -12,17 +12,6 @@ import {
   WebIcon
 } from '../../designElements/SVGelements';
 
-const styles = {
-  position:"absolute",
-  top:245,
-  width:400,
-  fontFamily: "MillerBanner",
-  fontStyle: "normal",
-  fontWeight: 300,
-  fontSize: "17px",
-  lineHeight: "26px",
-  textAlign: "center",
-};
 
  export  const App = () => (
   <div style={styles}>
@@ -76,6 +65,22 @@ const styles = {
   </div>
 );
 
+
+
+// styled components 
+
+
+const styles = {
+  position:"absolute",
+  top:245,
+  width:400,
+  fontFamily: "MillerBanner",
+  fontStyle: "normal",
+  fontWeight: 300,
+  fontSize: "17px",
+  lineHeight: "26px",
+  textAlign: "center",
+};
 const InfoText = styled.p`
 /* Lorem ipsum dolor si */
 

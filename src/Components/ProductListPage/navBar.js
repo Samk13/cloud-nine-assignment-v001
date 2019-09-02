@@ -37,8 +37,7 @@ const NavbarItem = styled.a`
 const Navbar = (props) => {
   return (
     <Wrapper>
-      
-      
+      {/* Intentially make it fire the price slider here  */}
       <NavbarItem onClick = {props.clicked}><BtnBack  /></NavbarItem>
       <NavbarItem>HÅR</NavbarItem>
       <NavbarItem><BtnOptions /></NavbarItem>

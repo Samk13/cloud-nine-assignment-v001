@@ -7,22 +7,25 @@ import {Link} from 'react-router-dom';
 const ProductListItem = props => {
   return (
     <Wrapper>
-
+      {/* first number */}
       <h5>{props.data.first}</h5>
 
       <div >
+        {/* title and location  */}
         <h4>{props.data.title}</h4>
         <Stars />
         <h6>{props.data.location}</h6>
       </div>
       <div>
-
+        {/* adding space for flexbox */}
       </div>
       <div>
+        {/* price and time */}
       <h6>{props.data.price}</h6>
       <h6>{props.data.time}</h6>
       </div>
       <Link to='/product'>
+      {/* back btn */}
       <GoBtn onClick={props.openItem}>
         <BtnBack />
       </GoBtn>
@@ -61,7 +64,7 @@ const GoBtn = styled.div`
   &:hover {
     opacity: 0.8;
     cursor: pointer;
-
+/* heat animation */
     animation: 0.9s infinite beatHeart;
     @keyframes beatHeart {
       0% {

@@ -4,6 +4,8 @@ import { BtnBack } from '../designElements/SVGelements';
 import { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
+
+// creating conditional rendering for the price slider filter
 const SearchItems = props => {
   if (props.onOff === true) {
     return (
@@ -45,6 +47,9 @@ const SearchItems = props => {
 };
 
 export { SearchItems };
+
+
+// styles
 
 const Wrapper = styled.div`
   max-width: 350px;

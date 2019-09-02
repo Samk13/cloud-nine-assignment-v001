@@ -5,14 +5,14 @@ import {
   Stars,
   Heart,
   BtnBack,
-  // LocationIcon,
-  // TimeIcon,
-  // TeleIcon,
-  // WebIcon
 } from '../designElements/SVGelements';
 import { Link } from 'react-router-dom';
-
 import {App} from '../productPage/TabsComponent/Tabs'
+
+
+
+// no dynamic data here 
+
 const ProductPage = props => {
   return (
     <Wrapper>
@@ -36,67 +36,16 @@ const ProductPage = props => {
         <TitleText>Salong Namn</TitleText>
         <RatingCounter>(32)</RatingCounter>
       </Image>
-        {/* Navigatiion that I didn't make here  */}
        <App />
-      {/* <TabNav>
-        <p>Info</p>
-        <p>Schema</p>
-      </TabNav> */}
-{/* 
-      <TextInfo>
-        <Wraper>
-          <ItemsS>
-            <LocationIcon />
-            <p style={{ marginLeft: 20 }}>Rådmansgatan 46, 113 57 Stockholm</p>
-          </ItemsS>
-          <ItemsS>
-            <TimeIcon />
-            <p style={{ marginLeft: 20 }}>Öppet till 19:00 idag</p>
-          </ItemsS>
-          <ItemsS>
-            <TeleIcon />
-            <p style={{ marginLeft: 20 }}>08-522 389 20</p>
-          </ItemsS>
-          <ItemsS>
-            <WebIcon />
-            <p style={{ marginLeft: 20 }}>www.salongweb.se</p>
-          </ItemsS>
-          <ItemsS>
-            <InfoText>Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet.
-              </InfoText>
-          </ItemsS>
 
-        </Wraper>
-      </TextInfo> */}
     </Wrapper>
   );
 };
 
 export { ProductPage };
 
-// const InfoText = styled.p`
-// /* Lorem ipsum dolor si */
+// styles 
 
-
-// max-width: 345px;
-// font-size: 15px;
-// line-height: 22px;
-// color: #2B2B2B;
-// `
-// const ItemsS = styled.div`
-//   display: flex;
-//   width: 375px;
-//   height: 64px;
-// `;
-
-// const Wraper = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   width: 90%;
-//   position: absolute;
-//   left: 25px;
-// `;
 
 const Image = styled.div`
   position: absolute;
@@ -143,8 +92,6 @@ const HeartStyle = styled.div`
 `;
 
 const BtnBackStyle = styled.div`
-  /* Path 5 */
-
   position: absolute;
   width: 9.14px;
   height: 18.38px;
@@ -154,7 +101,6 @@ const BtnBackStyle = styled.div`
     opacity: 0.8;
     cursor: pointer;
     fill: red;
-
     animation: 0.9s infinite beatHeart;
     @keyframes beatHeart {
       0% {
@@ -202,7 +148,6 @@ const TitleText = styled.h3`
   height: 26px;
   left: 25px;
   top: 179px;
-
   font-family: MillerBanner;
   font-style: normal;
   font-weight: 300;
@@ -213,28 +158,6 @@ const TitleText = styled.h3`
   letter-spacing: -0.146667px;
   color: #ffffff;
 `;
-// const TabNav = styled.div`
-//   /* Rectangle 16 Copy */
-//   position: absolute;
-//   width: 375px;
-//   height: 50px;
-//   left: 0px;
-//   top: 250px;
-
-//   background: #ffffff;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   text-align: center;
-// `;
-// const TextInfo = styled.div`
-//   position: absolute;
-//   width: 375px;
-//   height: 348px;
-//   left: 0px;
-//   top: 321px;
-//   background: #ffffff;
-// `;
 
 export const Wrapper = styled.div`
   height: 109px;
@@ -242,9 +165,7 @@ export const Wrapper = styled.div`
   max-width: 350px;
   display: flex;
   justify-content: space-around;
-  
   align-items: center;
-  
   padding: 1rem¨;
   border-bottom: 1px solid #d8d8d8;
 
