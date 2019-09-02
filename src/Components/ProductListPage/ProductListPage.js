@@ -14,9 +14,12 @@ export const ProductListPage = props => {
   return (
     <div className="itemsContainer">
       <NavBar clicked={props.clicked} />
-      <SearchItems props={props}
+      <SearchItems 
+      props={props}
+      clicked={props.clicked}
        slData={props.slData}
        handleOnChange={props.handleOnChange} 
+       onOff = {props.onOff}
        />
       {/* {Data.map((x, index) => <ProductListItem {...x} key ={index} openItem= {props.openItem}/>)} */}
       {Data}

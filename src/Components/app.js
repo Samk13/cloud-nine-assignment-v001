@@ -55,20 +55,20 @@ export default class App extends React.Component {
 
   handelInput = (e)=>{
     this.setState({search: e.target.value})
-    console.log(this.state.search);  
+     
   }
 
   handleOnChange = (value) => {
     this.setState({
       volume: value    
     })
-    console.log(this.state.volume);
+    
   }
 
   handleClick = e => {
     this.setState({ clicked: !this.state.clicked });
-    console.log(`clicked !`);
-    console.log(this.state);
+   console.log(this.state.clicked);
+   
   };
 
   handleOpen = e => {
@@ -90,11 +90,14 @@ export default class App extends React.Component {
               path="/"
               exact
               render={props => (
-                <ProductListPage {...props} clicked={this.handleClick}
+                <ProductListPage {...props} 
+                clicked={this.handleClick}
+                onOff = {this.state.clicked}
                 data = {this.state.Data}
                 filter = {filterSearch}
                 slData= {this.state.volume}
                 handleOnChange={this.handleOnChange}
+              
                 />
               )}
             />
