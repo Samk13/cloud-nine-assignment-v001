@@ -1,0 +1,38 @@
+[
+  {
+    "first": "12:00",
+    "title": "Sax&Fön",
+    "stars": 4,
+    "rating": 32,
+    "location": "Rådmansgatan 46",
+    "price": 320,
+    "time": "20 min"
+  },
+  {
+    "first": "14:00",
+    "title": "Sam&InteFön",
+    "stars": 4,
+    "rating": 36,
+    "location": "Hötorget 12",
+    "price": 500,
+    "time": "90 min"
+  },
+  {
+    "first": "16:00",
+    "title": "Saxofon&Bön",
+    "stars": 4,
+    "rating": 60,
+    "location": "Gallerian 46",
+    "price": 700,
+    "time": "50 min"
+  },
+  {
+    "first": "17:00",
+    "title": "Akta &huvudet",
+    "stars": "4",
+    "rating": "50",
+    "location": "Olof Palmes gata 13",
+    "price": 1000,
+    "time": "60 min"
+  }
+]

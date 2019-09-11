@@ -1,8 +1,5 @@
 .App {
-  font-family: sans-serif;
-  src:
-  url(./Components//designElements/Font\ Bureau\ -\ MillerBanner\ Light.otf) format('otf');
-  font-family: 'MillerBanner',sans-serif;
+  font-family: "MillerBanner", sans-serif;
   text-align: center;
 }
 

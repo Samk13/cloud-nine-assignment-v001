@@ -1,19 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
-import img from '../designElements/bgImage.jpg';
-import {
-  Stars,
-  Heart,
-  BtnBack,
-} from '../designElements/SVGelements';
-import { Link } from 'react-router-dom';
-import {App} from '../productPage/TabsComponent/Tabs'
+import React from "react";
+import styled from "styled-components";
+import img from "../designElements/bgImage.jpg";
+import { Stars, Heart, BtnBack } from "../designElements/SVGelements";
+import { Link } from "react-router-dom";
+import { App } from "../productPage/TabsComponent/Tabs";
+const salonsData = require("../../Data/Salons.json");
 
-
-
-// no dynamic data here 
+// no dynamic data here
 
 const ProductPage = props => {
+  const { match } = props;
+
+  // Get the salon from the json file based on params from the router
+  const salon = salonsData[match.params.index];
+
   return (
     <Wrapper>
       <Image>
@@ -32,20 +32,18 @@ const ProductPage = props => {
         <StarsStyle>
           <Stars />
         </StarsStyle>
-        
-        <TitleText>Salong Namn</TitleText>
+
+        <TitleText>{salon.title}</TitleText>
         <RatingCounter>(32)</RatingCounter>
       </Image>
-       <App />
-
+      <App />
     </Wrapper>
   );
 };
 
 export { ProductPage };
 
-// styles 
-
+// styles
 
 const Image = styled.div`
   position: absolute;
@@ -56,7 +54,7 @@ const Image = styled.div`
   height: 267px;
   left: 0px;
   top: -17px;
-  box-shadow: inset 0px -28px 63px -18px rgba(0,0,0,0.40);
+  box-shadow: inset 0px -28px 63px -18px rgba(0, 0, 0, 0.4);
 `;
 const HeartStyle = styled.div`
   position: absolute;
