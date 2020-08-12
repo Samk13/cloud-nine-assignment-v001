@@ -8,8 +8,8 @@
     "@yazanaabed/react-tabs": "2.3.6",
     "rc-slider": "9.3.1",
     "react": "16.13.1",
-    "react-dom": "16.13.0",
     "react-router-dom": "5.2.0",
+    "react-dom": "16.13.1",
     "react-scripts": "3.4.2",
     "styled-components": "4.4.1"
   },
