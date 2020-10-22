@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "dependencies": {
     "@yazanaabed/react-tabs": "2.3.6",
-    "rc-slider": "9.5.3",
+    "rc-slider": "9.5.4",
     "react": "16.14.0",
     "react-router-dom": "5.2.0",
     "react-dom": "16.14.0",
